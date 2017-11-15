@@ -1,8 +1,35 @@
 $(document).ready(function(){
-  $(".polaroid").click(function(){
-    $(".hidden").show();
+  $(".polaroid-lion").click(function(){
+    $("#info-lion").show();
   });
-  $(!".polaroid").click(function() {
-    $("info").hide();
+  $(".polaroid-sheep").click(function(){
+    $("#info-sheep").show();
+  });
+  $(".polaroid-dibbler").click(function(){
+    $("#info-dibbler").show();
+  });
+  $(".polaroid-bat").click(function(){
+    $("#info-bat").show();
+  });
+  $(".polaroid-panda").click(function(){
+    $("#info-panda").show();
+  });
+  $(".polaroid-wolf").click(function(){
+    $("#info-wolf").show();
+  });
+  $(".polaroid-shark").click(function(){
+    $("#info-shark").show();
+  });
+  $(".polaroid-sealion").click(function(){
+    $("#info-sealion").show();
+  });
+  $(".polaroid-tiger").click(function(){
+    $("#info-tiger").show();
+  });
+  $(".polaroid-whale").click(function(){
+    $("#info-whale").show();
+  });
+  $(".close-button").click(function(){
+    $(".hidden").hide();
   });
 });

@@ -1,11 +1,35 @@
 body {
   background-image: url("../img/cork-board.jpg");
+  font-family: levimarker;
   position: relative;
 }
 
 img {
   width: 100%;
   height: 100%;
+}
+
+@font-face {
+  font-family: "levimarker";
+  src: url("../fonts/LEVIMARKER.TTF") format("truetype");
+}
+
+#header {
+  display: block;
+  position: absolute;
+  z-index: 3;
+  bottom: 80%;
+  height: 43%;
+  width: 60%;
+  left: 20%;
+}
+
+#title {
+  position: absolute;
+  display: inline-block;
+  bottom: 60%;
+  left: 15%;
+  text-align: center;
 }
 
 .map {
@@ -15,6 +39,82 @@ img {
   margin-right: 5%;
   margin-top: 10%;
   z-index: 1;
+}
+
+.pin {
+  display: block;
+  position: absolute;
+  width: 5%;
+  height: auto;
+  z-index: 3;
+}
+
+.pin-right {
+  display: block;
+  position: absolute;
+  top: 16%;
+  left: 89%;
+  z-index: 4;
+  width: 14%;
+}
+
+.pin-left {
+  display: block;
+  position: absolute;
+  top: 16%;
+  left: 3%;
+  z-index: 4;
+  width: 14%;
+}
+
+.pin-lion {
+  top: 46.5%;
+  left: 52%;
+}
+
+.pin-sheep {
+  top: 36%;
+  left: 55%;
+}
+
+.pin-dibbler {
+  top: 61%;
+  left: 74%;
+}
+
+.pin-bat {
+  top: 20%;
+  left: 54%;
+}
+
+.pin-panda {
+  top: 33%;
+  left: 71%;
+}
+
+.pin-wolf {
+  top: 30.5%;
+  left: 20%;
+}
+
+.pin-shark {
+  top: 41.5%;
+  left: 10%;
+}
+
+.pin-sealion {
+  top: 17%;
+  left: 91%;
+}
+
+.pin-tiger {
+  top: 29%;
+  left: 78%;
+}
+
+.pin-whale {
+  top: 58.25%;
+  left: 40%;
 }
 
 .polaroid-lion {
@@ -117,25 +217,34 @@ img {
   left: 38%;
 }
 
-.polaroid:active {
+.polaroid:hover, .close-button:hover{
  cursor: pointer;
 
 }
 
-#info {
+.text {
+  position: absolute;
+  width: 40%;
+  top: 3%;
+  z-index: 4;
+  left: 15%;
+}
+#info-lion, #info-sheep, #info-dibbler, #info-bat, #info-panda, #info-wolf, #info-shark, #info-sealion, #info-tiger, #info-whale {
   position: absolute;
   width: 40%;
   top: 4%;
-  z-index: 2;
+  z-index: 3;
   left: 30%;
 }
 
-#close-button {
-  position: relative;
-  margin-left: 5%;
-  margin-top: 5%;
+.close-button {
+  position: absolute;
+  display: inline-block;
+  left: 4%;
+  top: 2%;
   z-index: 3;
 }
+
 
 .hidden {
   display: none;
@@ -231,7 +340,7 @@ img {
   width: 67%;
   height: auto;
   z-index: -1;
-  top: 12%;
+  top: 11%;
   left: 14%;
 }
 
@@ -242,6 +351,6 @@ img {
   width: 69%;
   height: auto;
   z-index: -1;
-  top: 13%;
+  top: 12%;
   left: 12%;
 }
